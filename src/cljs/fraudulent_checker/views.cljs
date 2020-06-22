@@ -27,7 +27,7 @@
                  :status @status
                  :change-on-blur? false
                  :on-change #(re-frame/dispatch [::events/set-customer %])
-                 :placeholder "Klient"]
+                 :placeholder "Klisasdent"]
                 [re-com/input-text
                  :model @user
                  :status @status
@@ -40,9 +40,9 @@
                  :change-on-blur? false
                  :input-type :password
                  :on-change #(re-frame/dispatch [::events/set-password %])
-                 :placeholder "Hasło"]
+                 :placeholder "Ha asło"]
                 [re-com/button
-                 :on-click #(re-frame/dispatch [::events/login])
+                 :on-click #(re-frame/dispatch [::events/sign-in {:user @user :customer @customer :password @password}])
                  :label "Zaloguj"]]]))
 
 

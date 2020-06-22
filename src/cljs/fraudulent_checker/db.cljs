@@ -5,4 +5,6 @@
    :credentials {:user nil
                  :customer nil
                  :password nil
-                 :status nil}})
+                 :status nil}
+   :list [{:graf "siema"} {:graf "wiska"}]
+   :result ""})

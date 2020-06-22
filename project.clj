@@ -8,7 +8,9 @@
                  [reagent "0.10.0"]
                  [re-frame "0.12.0"]
                  [day8.re-frame/tracing "0.5.5"]
-                 [re-com "2.8.0"]]
+                 [re-com "2.8.0"]
+                 [day8.re-frame/http-fx "v0.2.0"]
+                 [thedavidmeister/cljc-md5 "0.0.2"]]
 
   :plugins [[lein-shadow "0.2.0"]
             
